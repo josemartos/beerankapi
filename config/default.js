@@ -1,3 +1,4 @@
 module.exports = {
-  apiPort: 9393
+  apiPort: 9393,
+  dbUrl: "mongodb://localhost/test"
 };

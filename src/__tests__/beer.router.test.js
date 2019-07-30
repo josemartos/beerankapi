@@ -1,4 +1,4 @@
-const BeerRouter = require("../../routers/beer.router");
+const BeerRouter = require("../routers/beer.router");
 
 describe("beer router", () => {
   test("has get and get by id routes", () => {
