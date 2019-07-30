@@ -1,11 +1,7 @@
-# petproject
+# Express RESTful API foundation
 
-Express RESTful API foundation
+> Node.js, Express, Jest
 
 ## description
 
 Personal project used as an object of experimentation to test new technologies, libraries, frameworks, techniques, etc.
-
-## tech stack
-
-Node.js, Express, Jest
