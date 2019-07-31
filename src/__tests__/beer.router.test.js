@@ -1,7 +1,7 @@
 const BeerRouter = require("../routers/beer.router");
 
 describe("beer router", () => {
-  test("has get and get by id routes", () => {
+  test("has crud routes", () => {
     const routes = [
       { path: "/", method: "get" },
       { path: "/:id", method: "get" }

@@ -1,6 +1,6 @@
 # Express RESTful API foundation
 
-> Node.js, Express, Jest
+> Node.js, Express, MongoDB, Jest
 
 ## description
 

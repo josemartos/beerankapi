@@ -1,10 +1,4 @@
-const BeerControllers = {
-  get(req, res) {
-    res.json({ data: "something" });
-  },
-  getAll(req, res) {
-    res.json({ data: "somethingmore" });
-  }
-};
+const Beer = require("../models/beer.model");
+const crudControllers = require("../utils/crud");
 
-module.exports = BeerControllers;
+module.exports = crudControllers(Beer);
