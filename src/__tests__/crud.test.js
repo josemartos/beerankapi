@@ -33,7 +33,7 @@ describe("crud-controllers", () => {
       await getOne(req, res);
     });
 
-    test("404 if no doc was found", async () => {
+    test("404 if no beer was found", async () => {
       expect.assertions(2);
 
       const req = {

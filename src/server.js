@@ -39,4 +39,7 @@ const start = async () => {
   }
 };
 
-module.exports = start;
+module.exports = {
+  start,
+  app
+};
