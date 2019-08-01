@@ -2,6 +2,8 @@ const mongoose = require("mongoose");
 const crudControllers = require("../utils/crud");
 const Beer = require("../models/beer.model");
 
+const { getMany, getOne } = crudControllers(Beer);
+
 describe("crud-controllers", () => {
   describe("getOne", () => {
     test("finds beer by id", async () => {
@@ -28,7 +30,7 @@ describe("crud-controllers", () => {
         }
       };
 
-      await crudControllers(Beer).getOne(req, res);
+      await getOne(req, res);
     });
 
     test("404 if no doc was found", async () => {
@@ -50,7 +52,7 @@ describe("crud-controllers", () => {
         }
       };
 
-      await crudControllers(Beer).getOne(req, res);
+      await getOne(req, res);
     });
   });
 
@@ -84,7 +86,7 @@ describe("crud-controllers", () => {
         }
       };
 
-      await crudControllers(Beer).getMany(req, res);
+      await getMany(req, res);
     });
   });
 });

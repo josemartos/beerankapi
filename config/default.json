@@ -1,0 +1,8 @@
+{
+  "apiPort": 9393,
+  "dbUrl": "mongodb://localhost:27017/petproject",
+  "secrets": {
+    "jwt": "noveapinchoabe",
+    "jwtExp": "1d"
+  }
+}

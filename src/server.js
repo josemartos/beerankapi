@@ -4,7 +4,9 @@ const morgan = require("morgan");
 const config = require("config");
 
 const connect = require("./utils/db");
+const { signin, signup } = require("./utils/auth");
 const BeerRouter = require("./routers/beer.router");
+const UserRouter = require("./routers/user.router");
 
 const app = express();
 app.disable("x-powered-by");
@@ -13,8 +15,12 @@ app.use(json());
 app.use(urlencoded({ extended: true }));
 app.use(morgan("combined"));
 
+app.use("/signup", signup);
+app.use("/signin", signin);
+
 // Routes
 app.use("/api/beer", BeerRouter);
+app.use("/api/user", UserRouter);
 
 const start = async () => {
   try {

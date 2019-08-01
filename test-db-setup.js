@@ -30,7 +30,7 @@ beforeEach(async done => {
     try {
       await mongoose.connect(url + db, {
         useNewUrlParser: true,
-        autoIndex: true
+        useCreateIndex: true
       });
       await clearDB();
       await Promise.all(Object.keys(models).map(name => models[name].init()));

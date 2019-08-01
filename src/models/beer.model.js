@@ -12,7 +12,7 @@ const BeerSchema = new mongoose.Schema(
       type: String,
       required: true
     },
-    score: Number,
+    rating: Number,
     avatar: String
   },
   { timestamps: true }

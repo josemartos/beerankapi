@@ -20,9 +20,9 @@ describe("Beer model", () => {
       });
     });
 
-    test("score", () => {
-      const score = Beer.schema.obj.score;
-      expect(score).toEqual(Number);
+    test("rating", () => {
+      const rating = Beer.schema.obj.rating;
+      expect(rating).toEqual(Number);
     });
 
     test("avatar", () => {
