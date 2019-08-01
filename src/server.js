@@ -1,6 +1,7 @@
 const express = require("express");
 const { json, urlencoded } = require("body-parser");
 const morgan = require("morgan");
+const cors = require("cors");
 const config = require("config");
 
 const connect = require("./utils/db");
@@ -9,8 +10,13 @@ const BeerRouter = require("./routers/beer.router");
 const UserRouter = require("./routers/user.router");
 
 const app = express();
+var corsOptions = {
+  origin: config.cors,
+  optionsSuccessStatus: 200
+};
 app.disable("x-powered-by");
 
+app.use(cors(corsOptions));
 app.use(json());
 app.use(urlencoded({ extended: true }));
 app.use(morgan("combined"));

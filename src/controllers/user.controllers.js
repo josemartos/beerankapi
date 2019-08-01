@@ -2,7 +2,7 @@ const User = require("../models/user.model");
 
 module.exports = {
   me(req, res) {
-    res.status(200).json({ data: req.user });
+    res.status(200).json(req.user);
   },
   async updateMe(req, res) {
     try {
@@ -12,7 +12,7 @@ module.exports = {
         .lean()
         .exec();
 
-      res.status(200).json({ data: user });
+      res.status(200).json(user);
     } catch (e) {
       console.error(e);
       res.status(400).end();

@@ -6,7 +6,7 @@ module.exports = model => ({
         .lean()
         .exec();
 
-      res.status(200).json({ data: items });
+      res.status(200).json(items);
     } catch (e) {
       console.error(e);
       res.status(404).end();
@@ -24,7 +24,7 @@ module.exports = model => ({
         return res.status(404).end();
       }
 
-      res.status(200).json({ data: item });
+      res.status(200).json(item);
     } catch (e) {
       console.error(e);
       res.status(404).end({ message: e.message });

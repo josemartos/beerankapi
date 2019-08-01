@@ -26,7 +26,7 @@ describe("crud-controllers", () => {
           return this;
         },
         json(response) {
-          expect(response.data._id.toString()).toBe(newBeer._id.toString());
+          expect(response._id.toString()).toBe(newBeer._id.toString());
         }
       };
 
@@ -82,7 +82,7 @@ describe("crud-controllers", () => {
           return this;
         },
         json(response) {
-          expect(response.data.length).toEqual(3);
+          expect(response.length).toEqual(3);
         }
       };
 
