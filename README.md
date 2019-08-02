@@ -2,7 +2,7 @@
 
 > Node.js, Express, MongoDB, Jest
 
-## description
+## motivation
 
 Personal project used as an object of experimentation to test new technologies, libraries, frameworks, techniques, etc.
 
