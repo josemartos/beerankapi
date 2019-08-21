@@ -5,6 +5,7 @@ const connect = (url = config.dbUrl, opts = {}) => {
   return mongoose.connect(url, {
     ...opts,
     useCreateIndex: true,
+    useFindAndModify: false,
     useNewUrlParser: true
   });
 };

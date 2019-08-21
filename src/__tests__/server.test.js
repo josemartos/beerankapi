@@ -14,7 +14,7 @@ describe("API Authentication:", () => {
   describe("api auth", () => {
     test("api should be locked down", async () => {
       const id = mongoose.Types.ObjectId();
-      let response = await request(app).get(`/api/beer/${id}/rate`);
+      let response = await request(app).get(`/api/beers/${id}/rate`);
       expect(response.statusCode).toBe(401);
     });
 
