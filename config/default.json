@@ -4,6 +4,6 @@
   "cors": "http://localhost:1234",
   "secrets": {
     "jwt": "noveapinchoabe",
-    "jwtExp": "1d"
+    "jwtExp": "15d"
   }
 }

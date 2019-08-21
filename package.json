@@ -4,7 +4,8 @@
   "description": "Express RESTful API",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./src/index.js",
+    "start": "node ./src/index.js",
+    "dev": "nodemon ./src/index.js",
     "test": "jest",
     "coverage": "jest --coverage"
   },
@@ -27,5 +28,8 @@
     "jest": "^24.8.0",
     "nodemon": "^1.19.1",
     "supertest": "^4.0.2"
+  },
+  "engines": {
+    "node": "10.x"
   }
 }

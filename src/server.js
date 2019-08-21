@@ -25,8 +25,8 @@ app.use("/signup", signup);
 app.use("/signin", signin);
 
 // Routes
-app.use("/api/beer", BeerRouter);
-app.use("/api/user", UserRouter);
+app.use("/api/beers", BeerRouter);
+app.use("/api/users", UserRouter);
 
 const start = async () => {
   try {
