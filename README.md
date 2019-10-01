@@ -4,7 +4,7 @@
 
 ## Description
 
-It exposes routes to be implemented by [petproject](https://github.com/josemartos/petproject)
+It exposes routes to be implemented by [beerank](https://github.com/josemartos/beerank)
 
 ## Motivation
 

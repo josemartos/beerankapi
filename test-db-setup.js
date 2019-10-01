@@ -5,7 +5,7 @@ const _ = require("lodash");
 const Beer = require("./src/models/beer.model");
 const models = { Beer };
 
-const url = "mongodb://localhost:27017/petproject-testing";
+const url = "mongodb://localhost:27017/beerank-testing";
 
 global.newId = () => {
   return mongoose.Types.ObjectId();

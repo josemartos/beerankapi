@@ -1,5 +1,5 @@
 {
-  "name": "petprojectapi",
+  "name": "beerankapi",
   "version": "1.0.0",
   "description": "Express RESTful API",
   "main": "index.js",
